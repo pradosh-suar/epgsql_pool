@@ -92,5 +92,5 @@ get_connection(P) ->
     end.
 
 test_connection(C) ->
-    {ok, [_Col], [{<<"1">>}]} = pgsql:squery(C, "select 1"),
+    {ok, [_Col], [{<<"1">>}]} = epgsql:squery(C, "select 1"),
     ok.
